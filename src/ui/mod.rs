@@ -1,0 +1,9 @@
+pub mod details_panel;
+pub mod directory_panel;
+pub mod footer;
+pub mod header;
+pub mod layout;
+pub mod preview_panel;
+pub mod theme;
+pub mod tree_panel;
+pub mod widgets;

@@ -1,0 +1,43 @@
+#[derive(Clone, Debug, PartialEq)]
+pub enum Action {
+    Quit,
+    #[allow(dead_code)]
+    Tick,
+    MoveUp,
+    MoveDown,
+    EnterDir,
+    ParentDir,
+    FocusNext,
+    FocusPrev,
+    ToggleSelect,
+    SelectAll,
+    ClearSelection,
+    HistoryBack,
+    HistoryForward,
+    GoHome,
+    GoRoot,
+    GoToFirst,
+    GoToLast,
+
+    CopyToClipboard,
+    CutToClipboard,
+    PasteClipboard,
+    Rename,
+    Delete,
+    NewFile,
+    NewDir,
+
+    InputChar(char),
+    InputBackspace,
+    InputSubmit,
+    InputCancel,
+    ConfirmYes,
+    ConfirmNo,
+
+    CycleRenderer,
+    ToggleSearch,
+    SearchChar(char),
+    SearchBackspace,
+    CycleSearchKind,
+    MouseClick(u16, u16),
+}
